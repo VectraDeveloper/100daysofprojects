@@ -1,0 +1,15 @@
+/* ---- Fuente ---- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+/* ---- Variables ---- */ 
+:root {
+    --background: #212020;
+    --color: #FFF;
+    --fuente: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    font-family: m;
+    color:var(--color);
+}
