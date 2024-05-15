@@ -1,15 +1,72 @@
 /* ---- Fuente ---- */
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-/* ---- Variables ---- */ 
+/* ---- Variables ---- */
 :root {
-    --background: #212020;
-    --color: #FFF;
-    --fuente: "Montserrat", sans-serif;
+  --background: #212020;
+  --background-color: #242323;
+  --background-color-dark: #1e1d1d;
+  --color: #c2c2c2;
+  --color-second: #8a8a8a;
+  --fuente: "Montserrat", sans-serif;
 }
 
 body {
-    background-color: var(--background);
-    font-family: m;
-    color:var(--color);
+  background-color: var(--background);
+  font-family: var(--fuente);
+  color: var(--color);
+  display: flex;
+  justify-content: center; /* Para centrar horizontalmente */
+  align-items: center; /* Para centrar verticalmente */
+  height: 100vh;
+}
+
+div.profile-card {
+  background-color: var(--background-color);
+  width: 450px;
+  height: 550px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 13px 0px rgba(33, 32, 32, 1);
+  border-radius: 10px;
+}
+
+section.profile-info {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.profile-info img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+p.location {
+  background-color: var(--background-color-dark);
+  color: var(--color-second);
+  padding: 8px;
+  border-radius: 50px;
+  margin: 0 0 5px;
+}
+p.info {
+  padding: 0 40px;
+  text-align: center;
+}
+section.profile-links {
+  height: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1f1e1e;
+}
+
+section.profile-links a:hover {
+  transform: scale(1.1);
+  filter: invert(69%) sepia(5%) saturate(607%) hue-rotate(184deg) brightness(95%) contrast(92%);
 }
